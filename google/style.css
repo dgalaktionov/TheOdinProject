@@ -1,0 +1,181 @@
+/* Magic */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: arial,sans-serif;
+	color: #222;
+	font-size: small;
+}
+
+a {
+    color: #12C;
+    text-decoration: none;
+	font-family: arial,sans-serif;
+}
+
+#content {
+	height: 200px;
+	margin: 192px auto;
+	text-align: center;
+}
+
+#hplogo {
+    background: url('logo11w.png') no-repeat scroll 0% 0% / 269px 95px transparent;
+    height: 95px;
+    width: 269px;
+}
+
+div form input {
+	display: block;
+	width: 550px;
+	margin: 23px 0px 16px 0px;
+	height: 28px;
+	border: 1px solid black;
+	border-color: rgba(0, 0, 0, 0.15);
+	color: #222;
+	font: 16px arial,sans-serif;
+	padding: 0px 10px;
+}
+
+div form input:hover {
+	border-color: rgba(0, 0, 0, 0.3);
+}
+
+div form input:active, div form input:focus {
+	border-color: #4285F4;
+}
+
+.gbutton {
+	font: 13px/27px Arial,sans-serif;
+	font-weight: bold;
+	margin: 0px 6px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: 11px;
+	height: 29px;
+	padding: 0px 8px;
+	border-radius: 2px;
+	vertical-align: top;
+	text-align: center;
+}
+
+.gbutton:hover {
+	border-color: #C6C6C6;
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+}
+
+.gbutton:active {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+.gbutton:focus {
+    border: 1px solid #4D90FE;
+    outline: medium none;
+    box-shadow: 0px 0px 0px 1px #FFF inset;
+}
+
+#country {
+	color: #777;
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	left: 218px;
+	top: 70px;
+	font-family: arial,sans-serif;
+}
+
+#lang {
+	margin-top: 42px;
+}
+
+#lang a {
+    padding: 0px 3px;
+}
+
+#navbar {
+	height: 60px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 5px 30px 0px 0px;
+}
+
+#navbar a {
+	display: inline-block;
+	
+}
+
+.nlink {
+	/*min-width: 60px;*/
+	margin: 0px 6px;
+	color: #404040;
+	text-decoration: none;
+	text-align: right;
+	font: 13px/27px Arial,sans-serif;
+}
+
+#squares {
+	height: 30px;
+	width: 30px;
+	background-image: url('squares.png');
+	cursor: default;
+	position: relative;
+	top: 10px;
+	margin: 0px 12px 0px 6px;
+}
+
+#signin {
+	font: 13px/27px Arial,sans-serif;
+	background-color: #4387FD;
+	color: #FFF;
+	cursor: default;
+	text-decoration: none;
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+	border: 1px solid #4285F4;
+	outline: medium none;
+	line-height: 28px;
+	padding: 0px 12px;
+	border-radius: 2px;
+	text-align: left;
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+#footer {
+	height: 35px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 5px 0px 0px 0px;
+	background-color: #F2F2F2;
+	display: block;
+	border-top: 1px solid #E4E4E4;
+}
+
+#l_foot {
+	float: left;
+	margin-left: 30px;
+}
+
+#r_foot {
+	float: right;
+	margin-right: 30px;
+}
+
+#r_foot a, #l_foot a {
+	display: inline-block;
+	color: #666;
+	line-height: 30px;
+}
+
+#r_foot a {
+	padding: 0px 0px 0px 27px;
+}
+
+#l_foot a {
+	padding: 0px 27px 0px 0px;
+}
