@@ -11,3 +11,4 @@ The goal of this exercises is to improve my web development knowledge with Rails
 *  sketchpad: A small JQuery exercise where you start with a sketchpad of squares that grow brighter as you pass your mouse over them
 *  learn_ruby: A collection of exercises designed to learn ruby from http://testfirst.org/learn_ruby. All solved.
 *  blogger: A Rails official tutorial where you build a blog application. I've also done all the optional section. This exercise inspired me to start my first Rails project on my own, called Phorum :-)
+*  sample_app: A simple webapp in Rails to learn stuff about styling and Bootstrap.
