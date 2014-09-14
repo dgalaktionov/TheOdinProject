@@ -1,3 +1,5 @@
 == Sample App
 
 This project is used to learn some stuff about styling and Bootstrap in Rails, following this tutorial: https://www.railstutorial.org/book/filling_in_the_layout
+
+Incomplete. Found it boring.
