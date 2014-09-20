@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  root "static_pages#home"
+  get "index" => "static_pages#home"
+
+  get "login" => "session#new", as: :login
+  post "login" => "session#create"
+  delete "logout" => "session#destroy", as: :logout
+
   resources :users, only: [:show, :new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.

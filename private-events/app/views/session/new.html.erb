@@ -1,0 +1,7 @@
+<h1>Session#new</h1>
+
+<%= form_tag("/login", method: "post") do %>
+  <%= label_tag(:id, "User id:") %>
+  <%= text_field_tag(:id) %>
+  <%= submit_tag("Sign in") %>
+<% end %>
