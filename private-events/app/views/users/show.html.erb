@@ -1,3 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<p>User id: <%= @user.id %><p>
+<h2>User <%= @user.id %></h2>
+
+<% if @user.created_events.empty? %>
+<h3>This user has no events.</h3>
+
+<% else %>
+<h3>Events created by the user:</h3>
+<table>
+  <tr>
+    <th>id</th>
+    <th>Date</th>
+    <th>Place</th>
+  </tr>
+  
+  <% for e in @user.created_events %>
+  <tr>
+    <td><%= e.id %></td>
+    <td><%= e.date %></td>
+    <td><%= e.place %></td>
+  </tr>
+  <% end %>
+</table>
+<% end %>
