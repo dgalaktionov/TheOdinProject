@@ -1,12 +1,8 @@
 class SessionController < ApplicationController
 include ApplicationHelper
+before_action :check_signed_out, only: [:new, :create]
 
   def new
-    if user_signed_in?
-      flash[:error] = "Already signed in!"
-      redirect_to root_path
-      return
-    end
   end
 
   def create

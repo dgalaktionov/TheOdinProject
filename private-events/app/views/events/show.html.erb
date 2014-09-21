@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<h2>Event <%= @event.id %></h2>
+
 <p>
   <strong>Date:</strong>
   <%= @event.date %>
@@ -12,8 +14,5 @@
 
 <p>
   <strong>Created by:</strong>
-  <%= @event.created_by %>
+  <%= link_to @event.created_by, @event.created_by %>
 </p>
-
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>

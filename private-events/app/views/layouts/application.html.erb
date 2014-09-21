@@ -15,6 +15,7 @@
 <% end %>
 
 <header>
+	<%= link_to "Index", root_path %>
 	<% if user_signed_in? %>
 		<span>[<%= link_to current_user.id, current_user %>]</span>
 		<%= link_to "Sign out", logout_path, :method => :delete %>

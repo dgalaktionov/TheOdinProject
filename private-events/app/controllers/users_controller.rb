@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
+  include ApplicationHelper
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :check_signed_out, only: [:new, :create]
 
   # GET /users
   # GET /users.json

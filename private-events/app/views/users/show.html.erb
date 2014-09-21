@@ -16,7 +16,7 @@
   
   <% for e in @user.created_events %>
   <tr>
-    <td><%= e.id %></td>
+    <td><%= link_to e.id, e %></td>
     <td><%= e.date %></td>
     <td><%= e.place %></td>
   </tr>
