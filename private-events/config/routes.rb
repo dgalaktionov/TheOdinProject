@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  #resources :events
+
   root "static_pages#home"
   get "index" => "static_pages#home"
 
