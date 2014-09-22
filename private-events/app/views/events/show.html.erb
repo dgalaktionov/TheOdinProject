@@ -16,3 +16,23 @@
   <strong>Created by:</strong>
   <%= link_to @event.created_by, @event.created_by %>
 </p>
+
+<% if @event.invites.empty? %>
+<h3>This event has no guests.</h3>
+
+<% else %>
+<h3>Guests to this event:</h3>
+<table>
+  <tr>
+    <th>User id</th>
+    <th>Assists</th>
+  </tr>
+  
+  <% for i in @event.invites %>
+  <tr>
+    <td><%= link_to i.guest, i.guest %></td>
+    <td><%= i.attends %></td>
+  </tr>
+  <% end %>
+</table>
+<% end %>

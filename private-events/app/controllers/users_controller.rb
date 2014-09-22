@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   include ApplicationHelper
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  #before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_action :check_signed_out, only: [:new, :create]
 
   # GET /users
@@ -12,6 +12,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    @user = User.includes({ invites: :event }).find(params[:id])
   end
 
   # GET /users/new
