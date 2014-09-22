@@ -11,12 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140922101242) do
-
-  create_table "attendances", id: false, force: true do |t|
-    t.integer "attendee_id"
-    t.integer "attended_event_id"
-  end
+ActiveRecord::Schema.define(version: 20140922101909) do
 
   create_table "events", force: true do |t|
     t.datetime "date"
@@ -27,6 +22,15 @@ ActiveRecord::Schema.define(version: 20140922101242) do
   end
 
   add_index "events", ["created_by_id"], name: "index_events_on_created_by_id"
+
+  create_table "invites", id: false, force: true do |t|
+    t.integer "guest_id"
+    t.integer "event_id"
+    t.boolean "attends"
+  end
+
+  add_index "invites", ["event_id"], name: "index_invites_on_event_id"
+  add_index "invites", ["guest_id"], name: "index_invites_on_guest_id"
 
   create_table "users", force: true do |t|
     t.datetime "created_at"
