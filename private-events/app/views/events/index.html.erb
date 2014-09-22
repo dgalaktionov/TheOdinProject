@@ -1,5 +1,6 @@
 <h2>Listing events</h2>
 
+<h3>Upcoming events:</h3>
 <table>
   <thead>
     <tr>
@@ -11,10 +12,54 @@
   </thead>
 
   <tbody>
-    <% @events.each do |event| %>
+    <% @upcoming_events.each do |event| %>
       <tr>
 	    <td><%= link_to event.id, event %></td>
         <td><%= event.date %></td>
+        <td><%= event.place %></td>
+        <td><%= link_to event.created_by, event.created_by %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h3>Past events:</h3>
+<table>
+  <thead>
+    <tr>
+	  <th>Id</th>
+      <th>Date</th>
+      <th>Place</th>
+      <th>Created by</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @past_events.each do |event| %>
+      <tr>
+	    <td><%= link_to event.id, event %></td>
+        <td><%= event.date %></td>
+        <td><%= event.place %></td>
+        <td><%= link_to event.created_by, event.created_by %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h3>Permanent events:</h3>
+<table>
+  <thead>
+    <tr>
+	  <th>Id</th>
+      <th>Place</th>
+      <th>Created by</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @permanent_events.each do |event| %>
+      <tr>
+	    <td><%= link_to event.id, event %></td>
         <td><%= event.place %></td>
         <td><%= link_to event.created_by, event.created_by %></td>
       </tr>

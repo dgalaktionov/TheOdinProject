@@ -6,4 +6,16 @@ class User < ActiveRecord::Base
   def to_s
     id
   end
+  
+  def upcoming_events
+    self.invites.joins(:event).select("event_id, place, date, attends").where("date > ?", DateTime.now)
+  end
+  
+  def past_events
+    self.invites.joins(:event).select("event_id, place, date, attends").where("date < ?", DateTime.now)
+  end
+  
+  def permanent_events
+    self.invites.joins(:event).select("event_id, place, date, attends").where("date is null")
+  end
 end

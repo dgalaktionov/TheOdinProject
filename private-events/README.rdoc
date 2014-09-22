@@ -3,3 +3,5 @@
 This project is a tutorial to learn about data modeling in rails and associations. It's a event scheduling applications, where users can create and assist to events. More info: http://www.theodinproject.com/ruby-on-rails/associations?ref=lc-pb
 
 Yes, I'm so lazy that users don't even have names. Just ids.
+
+In the data modelling, users can be invited to events, and then these users can confirm their assistance. However, I've made no interface nor logic for all this, so it can only be done by console. This was a data modelling exercise after all. God, I'm so lazy :-)
